@@ -30,7 +30,7 @@ export const getAllGames = () => {
 
 export function getAllGenres(){
   return function (dispatch){
-     fetch('http://localhost:3001/genres')
+     fetch('https://videogames-diegop1zarr0.herokuapp.com/genres')
     .then(info => info.json())
     .then (data=>dispatch({type:GET_ALL_GENRES, payload: data }))
   }
