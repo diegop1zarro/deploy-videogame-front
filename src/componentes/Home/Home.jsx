@@ -6,6 +6,7 @@ import CardGame from '../CardGame/CardGame.jsx';
 import NavBar from '../NavBar/NavBar.jsx';
 import Paginate from '../Paginate/Paginate.jsx'
 import Search from '../Search/Search.jsx';
+import Loading from '../Loading/Loading.jsx'
 import '../../Style/Home.css'
 import { Link } from 'react-router-dom';
 
@@ -169,10 +170,7 @@ return (
             // CreadoPorDiego={ game.Creado_por_Diego ? game.Creado_por_Diego: 'Existente'}
             /> </div> ) } )
             ): 
-            <div>
-              <div className="spinner"></div>
-                    <p>cargando...</p>
-             </div>       
+            <Loading/>  
                
           }
         
