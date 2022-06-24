@@ -73,3 +73,24 @@ display: flex;
 .algo{
    text-decoration: none;
 }
+
+@media screen and (max-width: 500px) {
+   .CardDetail{
+      width: 400px;
+      height: auto;
+      background-color: rgba(31, 32, 56, 0.753);
+      position: relative;
+      margin-left:0px;
+    }
+    .imagenDetail{
+      height: 200px;
+      width: 300px;
+    }
+    .titleDetail{
+      font-size: 40px;
+      color: cadetblue;
+      font-family: serif;
+      
+   
+    }
+ }
