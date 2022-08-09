@@ -114,10 +114,12 @@ const initialState = {
             games:state.Allgames
             
           }    
-        case DELETE_GAME:
-          return{
-            ...state,
-          }
+          case DELETE_GAME:
+            const deleteGame = state.games.filter(game => game.id !== action.payload)
+            return{
+              ...state,
+              games: deleteGame
+            }
           case ALL_PLATFORMS:
             return{
               ...state,

@@ -78,7 +78,9 @@ export function deleteGame(id){
    await axios.delete('https://videogames-diegop1zarr0.herokuapp.com/delete/'+ id)
     .then(()=>{
       dispatch({
-        type:DELETE_GAME
+        type:DELETE_GAME,
+        payload:id
+
       })
     })
   }
