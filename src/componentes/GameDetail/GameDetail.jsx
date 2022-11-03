@@ -31,7 +31,7 @@ const GameDetail = () => {
         return (
             <div>
         <NavBar/> 
-        <NavLink className='algo' to='/home'>
+        <NavLink className='linkRegresar' to='/home'>
             <button className='backDetail'>regresar</button>
         </NavLink>
         { gameDetails.name ? 

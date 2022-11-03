@@ -23,41 +23,21 @@
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
- h4{
-   font-size: 20px;
-   color: white;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }
- p{
-   color: cadetblue;
-   font-size: 17px;
-   margin-left: 6px;
-   /* font-family: serif; */
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
- }
  .botonDeleteJuego{
    background-color: #4e0000d0;
    color: white;
    border-radius: 6px;
    border-color: white;
-padding: 5px;
-font-size: 20px;
-display: flex;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding: 5px;
+   font-size: 20px;
+   display: flex;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
  .botonDeleteJuego:hover{
    background-color: rgba(63, 2, 2, 0.603);
  }
- /* width: 90%;
-    max-width: 120rem;
-    margin: 1px auto;
-    background: rgba(104, 100, 100, 0.459);
-    padding: 18px 18px;
-    box-shadow: 3px -1px 50px -11px rgba(0,0,0,1);
-    -webkit-box-shadow: 3px -1px 50px -11px rgba(0,0,0,1);
-    -moz-box-shadow: 3px -1px 50px -11px rgba(0,0,0,1); */
 
 .backDetail{
    text-decoration: none;
@@ -65,21 +45,18 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    color: cadetblue;
    border-radius: 6px;
    border-color: cadetblue;
-padding: 5px;
-font-size: 18px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-display: flex;
+   padding: 5px;
+   font-size: 18px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   display: flex;
 }
-.algo{
+.linkRegresar{
    text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {
    .CardDetail{
       width: 400px;
-      height: auto;
-      background-color: rgba(31, 32, 56, 0.753);
-      position: relative;
       margin-left:0px;
     }
     .imagenDetail{
@@ -88,9 +65,5 @@ display: flex;
     }
     .titleDetail{
       font-size: 40px;
-      color: cadetblue;
-      font-family: serif;
-      
-   
     }
  }
