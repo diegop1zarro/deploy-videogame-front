@@ -24,11 +24,9 @@ margin-bottom: 10px;
 } 
 
 .titleCard{
-  text-decoration: none;
   color: var(--primaryColor);
   font-size: 30px;
   font-family: serif;
-
 }
 @media screen and (max-width: 500px) {
   .containerCard{
