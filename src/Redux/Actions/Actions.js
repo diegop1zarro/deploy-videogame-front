@@ -15,10 +15,12 @@ export const REFRESH = "REFRESH";
 export const DELETE_GAME = "DELETE_GAME"
 export const ALL_PLATFORMS = "ALL_PLATFORMS"
 
+const URL = 'https://deployd-videogames-production.up.railway.app/'
+
 export const getAllGames = () => {
     return  function (dispatch) {
       
-    return fetch('https://videogames-diegop1zarr0.herokuapp.com/videogames')
+    return fetch(`${URL}videogames`)
     .then(info => info.json())
     .then (data => dispatch({
       type: GET_ALL_GAMES,
@@ -30,7 +32,7 @@ export const getAllGames = () => {
 
 export function getAllGenres(){
   return function (dispatch){
-     fetch('https://videogames-diegop1zarr0.herokuapp.com/genres')
+     fetch(`${URL}genres`)
     .then(info => info.json())
     .then (data=>dispatch({type:GET_ALL_GENRES, payload: data }))
   }
@@ -38,7 +40,7 @@ export function getAllGenres(){
 export function getAllDetails (id){
   return  function (dispatch) {
       
-    return fetch('https://videogames-diegop1zarr0.herokuapp.com/videogame/'+ id)
+    return fetch(`${URL}videogame/${id}`)
     .then(info => info.json())
     .then (data => dispatch({
       type: GET_ALL_DETAILS,
@@ -51,7 +53,7 @@ export function getAllDetails (id){
 export function getByName(name){
   return function (dispatch) {
     try{
-       fetch(`https://videogames-diegop1zarr0.herokuapp.com/videogames?name=${name}`)
+       fetch(`${URL}videogames?name=${name}`)
       .then(info => info.json())
       .then (data => dispatch({
         type: GET_BY_NAME,
@@ -69,13 +71,13 @@ export function getByName(name){
 }
 export function createGame(game){
   return async function(){
-  const post = await axios.post('https://videogames-diegop1zarr0.herokuapp.com/videogames',game)
+  const post = await axios.post(`${URL}videogames`,game)
   return post
     }
 };
 export function deleteGame(id){
   return async function(dispatch){
-   await axios.delete('https://videogames-diegop1zarr0.herokuapp.com/delete/'+ id)
+   await axios.delete(`${URL}delete/${id}`)
     .then(()=>{
       dispatch({
         type:DELETE_GAME,
@@ -128,7 +130,7 @@ export function Refresh(){
 }
 export function getAllPlatforms(){
   return function (dispatch){
-    fetch('https://videogames-diegop1zarr0.herokuapp.com/platforms')
+    fetch(`${URL}platforms`)
    .then(info => info.json())
    .then (data=>dispatch({type:ALL_PLATFORMS, payload: data }))
  }
